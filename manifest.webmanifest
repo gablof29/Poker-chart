@@ -1,0 +1,25 @@
+{
+  "name": "Poker Chart",
+  "short_name": "Poker Chart",
+  "description": "Chart preflop poker con stack e tavoli configurabili.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f5f7f3",
+  "theme_color": "#257a4f",
+  "icons": [
+    {
+      "src": "icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

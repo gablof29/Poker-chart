@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Poker Chart">
+  <rect width="512" height="512" rx="96" fill="#257a4f"/>
+  <rect x="86" y="110" width="340" height="292" rx="28" fill="#f5f7f3"/>
+  <path d="M256 160c39 42 82 82 82 130 0 39-31 69-74 69h-16c-43 0-74-30-74-69 0-48 43-88 82-130Z" fill="#17211b"/>
+  <path d="M226 342h60l22 52H204l22-52Z" fill="#17211b"/>
+  <path d="M133 134h246v42H133zM133 218h54v44h-54zM207 218h54v44h-54zM325 218h54v44h-54zM133 306h54v44h-54zM325 306h54v44h-54z" fill="#257a4f"/>
+</svg>

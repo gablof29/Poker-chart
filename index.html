@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Poker Chart</title>
+    <meta name="theme-color" content="#257a4f" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Poker Chart" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
+    <link rel="icon" href="icons/icon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="topbar" aria-label="Controlli chart">
+        <div>
+          <p class="eyebrow">Preflop helper</p>
+          <h1>Poker Chart</h1>
+        </div>
+
+        <div class="controls">
+          <label>
+            Tavolo
+            <select id="tableSelect">
+              <option value="5">5 persone</option>
+              <option value="6" selected>6 persone</option>
+              <option value="8">8 persone</option>
+              <option value="9">9 persone</option>
+            </select>
+          </label>
+
+          <label>
+            Posizione
+            <select id="positionSelect"></select>
+          </label>
+
+          <label class="stack-control">
+            <span>Stack <strong id="stackValue">100 BB</strong></span>
+            <input id="stackSlider" type="range" min="10" max="100" step="5" value="100" />
+          </label>
+        </div>
+      </section>
+
+      <section class="summary" aria-live="polite">
+        <div>
+          <span class="summary-label">Scenario</span>
+          <strong id="scenarioTitle"></strong>
+        </div>
+        <p id="scenarioNote"></p>
+      </section>
+
+      <section class="workspace">
+        <div class="chart-wrap" aria-label="Tabella mani poker">
+          <div id="handGrid" class="hand-grid"></div>
+        </div>
+
+        <aside class="side-panel" aria-label="Dettagli mano">
+          <div>
+            <span class="summary-label">Mano selezionata</span>
+            <h2 id="selectedHand">AA</h2>
+            <p id="selectedAction"></p>
+          </div>
+
+          <div class="legend">
+            <h3>Legenda</h3>
+            <div><span class="swatch raise"></span> Open / Raise</div>
+            <div><span class="swatch call"></span> Call</div>
+            <div><span class="swatch mix"></span> Mix</div>
+            <div><span class="swatch fold"></span> Fold</div>
+          </div>
+
+          <div class="notes">
+            <h3>Note rapide</h3>
+            <ul id="quickNotes"></ul>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
